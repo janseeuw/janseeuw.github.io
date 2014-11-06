@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonas Anseeuw - Jonas Anseeuw]]></title><description><![CDATA[PhD Student at Ghent University]]></description><link>http://jns.me/</link><generator>Ghost 0.5</generator><lastBuildDate>Sat, 01 Nov 2014 14:25:46 GMT</lastBuildDate><atom:link href="http://jns.me/author/jonas-anseeuw/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Mediacenter built on MEAN stack]]></title><description><![CDATA[<p>I have built a <a href="https://github.com/wixon/chips">mediacenter</a> application with the different components of the MEAN stack (MongoDB, ExpressJS, AngularJS, NodeJS).</p>]]></description><link>http://jns.me/mediacenter-built-on-mean-stack/</link><guid isPermaLink="false">8a3a7385-bc77-4b5c-be3a-41e210d7cc56</guid><category><![CDATA[Web Development]]></category><category><![CDATA[Jav]]></category><dc:creator><![CDATA[Jonas Anseeuw]]></dc:creator><pubDate>Sun, 26 Oct 2014 19:45:51 GMT</pubDate></item><item><title><![CDATA[JavaScript Brainfuck interpreter]]></title><description><![CDATA[<p>I was at a job interview and they told me designing a programming language and writing an interpreter is fun to do. Someone also mentioned me the language <a href="http://en.wikipedia.org/wiki/Brainfuck">Brainfuck</a>. I have then decided to write a Brainfuck <a href="http://jns.me/Brainfuck/">interpreter</a> in JavaScript.</p>]]></description><link>http://jns.me/javascript-brainfuck-interpreter/</link><guid isPermaLink="false">5576070c-7424-447b-9c6b-49a8cd8126e8</guid><category><![CDATA[Web Development]]></category><category><![CDATA[JavaScript]]></category><dc:creator><![CDATA[Jonas Anseeuw]]></dc:creator><pubDate>Tue, 09 Sep 2014 16:33:00 GMT</pubDate></item><item><title><![CDATA[Polymer]]></title><description><![CDATA[<p>Last month I discovered the world of <a href="http://www.w3.org/TR/components-intro/">Web Components</a>. <br>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonas Anseeuw - Jonas Anseeuw]]></title><description><![CDATA[PhD Student at Ghent University]]></description><link>http://jns.me/</link><generator>Ghost 0.5</generator><lastBuildDate>Thu, 06 Nov 2014 21:59:45 GMT</lastBuildDate><atom:link href="http://jns.me/author/jonas-anseeuw/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Write a Python dictionary to a CSV file]]></title><description><![CDATA[<p>Writing a dictionary in Python to a CSV file allows you to render a graph with data (from that dictionary). </p>
+
+<p>Here are the 3 steps:</p>
+
+<p><strong>1 Building the dictionary</strong>.</p>
+
+<p>This is just an example of how the dictionary should look like. The Python script can populate the dictionary.</p>
+
+<pre><code>dictionary = { "Foo": [1,2,3],
+               "Bar": [4,5,6],
+               "Baz": [7,8,9] }
+</code></pre>
+
+<p><strong>2 Import the modules.</strong></p>
+
+<pre><code>import csv
+from itertools import zip_longest
+</code></pre>
+
+<p><strong>3 Writing to a CSV file.</strong></p>
+
+<pre><code>with open("output.csv", "w") as outfile:
+  writer = csv.writer(outfile)
+  writer.writerow(list(dictionary.keys()))
+  writer.writerows(list(zip_longest(*dictionary.values())))
+</code></pre>
+
+<p><strong>When opened in Microsoft Excel, you get this output:</strong></p>
+
+<p><img src="http://jns.me/content/images/2014/11/hwojP5z55JR5tBmBRp4QiIT0bcfGKjyxqQFePW-V7x4.png" alt="OUTPUT"></p>]]></description><link>http://jns.me/write-a-python-dictionary-to-a-csv-file/</link><guid isPermaLink="false">25bb0c8b-94b4-49ad-8d63-6a8062629e61</guid><dc:creator><![CDATA[Jonas Anseeuw]]></dc:creator><pubDate>Thu, 06 Nov 2014 21:37:43 GMT</pubDate></item><item><title><![CDATA[Mediacenter built on MEAN stack]]></title><description><![CDATA[<p>I have built a <a href="https://github.com/wixon/chips">mediacenter</a> application with the different components of the MEAN stack (MongoDB, ExpressJS, AngularJS, NodeJS).</p>]]></description><link>http://jns.me/mediacenter-built-on-mean-stack/</link><guid isPermaLink="false">8a3a7385-bc77-4b5c-be3a-41e210d7cc56</guid><category><![CDATA[Web Development]]></category><category><![CDATA[Jav]]></category><dc:creator><![CDATA[Jonas Anseeuw]]></dc:creator><pubDate>Sun, 26 Oct 2014 19:45:51 GMT</pubDate></item><item><title><![CDATA[JavaScript Brainfuck interpreter]]></title><description><![CDATA[<p>I was at a job interview and they told me designing a programming language and writing an interpreter is fun to do. Someone also mentioned me the language <a href="http://en.wikipedia.org/wiki/Brainfuck">Brainfuck</a>. I have then decided to write a Brainfuck <a href="http://jns.me/Brainfuck/">interpreter</a> in JavaScript.</p>]]></description><link>http://jns.me/javascript-brainfuck-interpreter/</link><guid isPermaLink="false">5576070c-7424-447b-9c6b-49a8cd8126e8</guid><category><![CDATA[Web Development]]></category><category><![CDATA[JavaScript]]></category><dc:creator><![CDATA[Jonas Anseeuw]]></dc:creator><pubDate>Tue, 09 Sep 2014 16:33:00 GMT</pubDate></item><item><title><![CDATA[Polymer]]></title><description><![CDATA[<p>Last month I discovered the world of <a href="http://www.w3.org/TR/components-intro/">Web Components</a>. <br>
 Web Components are like an umbrella for <a href="http://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a>, <a href="http://w3c.github.io/webcomponents/spec/imports/">HTML Imports</a>, <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/scripting.html#the-template-element">Templates</a> and <a href="http://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a>.</p>
 
 <p>Web Components aren't supported by all browsers yet. Google's <a href="http://www.polymer-project.org/">Polymer</a> serves as a set of polyfills to enable Web Components on most recent browers today.</p>
